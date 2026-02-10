@@ -1,16 +1,18 @@
 import { useState, useEffect, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-import painting1 from "@/assets/painting-1.jpg";
-import painting2 from "@/assets/painting2.jpg";
-import painting3 from "@/assets/painting-3.jpg";
-import painting4 from "@/assets/painting-4.jpg";
+import painting1 from "@/assets/landscape_2.jpg";
+import painting2 from "@/assets/Flut.png";
+import painting3 from "@/assets/überm_Berg.jpg";
+import painting4 from "@/assets/Ohne_Titel_3.png";
+import painting5 from "@/assets/Ohne_Titel_7.png";
 
 const slides = [
-  { src: painting1, title: "Ochre Field", year: "2024" },
-  { src: painting2, title: "Deep Current", year: "2023" },
-  { src: painting3, title: "Morning Veil", year: "2024" },
-  { src: painting4, title: "Still Table", year: "2023" },
+  { src: painting2, title: "Flut", year: "2023" },
+  { src: painting3, title: "Überm Berg", year: "2017 - 2020" },
+  { src: painting4, title: "Ohne Titel 3", year: "2025" },
+  { src: painting5, title: "Ohne Titel 7", year: "2024" },
+  { src: painting1, title: "landscape 2", year: "2005 - 2007" },
 ];
 
 const INTERVAL = 6000;
@@ -76,10 +78,10 @@ const HeroCarousel = () => {
             key={i}
             onClick={() => setCurrent(i)}
             aria-label={`View slide ${i + 1}`}
-            className={`h-[2px] rounded-full transition-all duration-700 ${
+            className={`h-[3px] rounded-full transition-all duration-700 ${
               i === current
-                ? "w-8 bg-primary-foreground/60"
-                : "w-4 bg-primary-foreground/20 hover:bg-primary-foreground/40"
+                ? "w-12 bg-primary-foreground/60"
+                : "w-6 bg-primary-foreground/20 hover:bg-primary-foreground/40"
             }`}
           />
         ))}

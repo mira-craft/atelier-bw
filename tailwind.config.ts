@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['"Cormorant Garamond"', "Georgia", "serif"],
+        serif: ['"Creato Display"', "sans-serif"],
         sans: ['"DM Sans"', "system-ui", "sans-serif"],
       },
       colors: {
