@@ -5,7 +5,7 @@ import MusealLayout from "@/components/MusealLayout";
 import PaintingDetail from "@/components/PaintingDetail";
 import { Painting, filenameToTitle } from "@/data/paintings";
 
-const WORKER_URL = "https://paintings-worker.dieewe.workers.dev";
+const API_BASE = import.meta.env.VITE_WORKER_URL;
 
 interface WorkerItem {
   id: string;
@@ -31,7 +31,7 @@ const Werke = () => {
 
   // Load data from worker
   useEffect(() => {
-    fetch(WORKER_URL)
+    fetch(API_BASE)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to load works");
         return res.json();
