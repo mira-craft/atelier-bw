@@ -9,37 +9,43 @@ const Kontakt = () => {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="max-w-md"
+          className="w-full max-w-5xl"
         >
-          <h1 className="font-serif text-3xl text-foreground">Kontakt</h1>
-
-          <div className="mt-12 space-y-8 font-body text-sm leading-[1.8] text-muted-foreground">
-            <p>
-              Ich freue mich über Anfragen zu meinen Arbeiten, zu aktuellen oder
-              vergangenen Projekten sowie über einen persönlichen Austausch.
-            </p>
-
-            <p>
-              Wenn Sie Interesse an einem Werk haben oder einen Besuch im Atelier
-              vereinbaren möchten, schreiben Sie mir gerne eine E-Mail.
-            </p>
-
+          <div className="grid gap-16 md:grid-cols-2">
             <div>
-              <p className="text-xs tracking-[0.15em] uppercase text-muted-foreground/70">
-                E-Mail
-              </p>
-              <a
-                href="mailto:studio@miamustermann.com"
-                className="mt-1 inline-block text-foreground transition-opacity duration-300 hover:opacity-60"
-              >
-                b-weitner@gmx.de
-              </a>
-            </div>
-          </div>
+              <h1 className="font-serif text-3xl text-foreground">Kontakt</h1>
 
-          <p className="mt-16 font-body text-[15px] leading-relaxed text-muted-foreground/50">
-            Ich bemühe mich, zeitnah zu antworten. Vielen Dank für Ihr Interesse.
-          </p>
+              <div className="mt-12 space-y-8 font-body text-sm leading-[1.8] text-muted-foreground">
+                <p>
+                  Ich freue mich über Anfragen zu meinen Arbeiten, zu aktuellen oder
+                  vergangenen Projekten sowie über einen persönlichen Austausch.
+                </p>
+
+                <p>
+                  Wenn Sie Interesse an einem Werk haben oder einen Besuch im Atelier
+                  vereinbaren möchten, schreiben Sie mir gerne eine E-Mail.
+                </p>
+
+                <div>
+                  <p className="text-xs tracking-[0.15em] uppercase text-muted-foreground/70">
+                    E-Mail
+                  </p>
+                  <a
+                    href="mailto:studio@miamustermann.com"
+                    className="mt-1 inline-block text-foreground transition-opacity duration-300 hover:opacity-60"
+                  >
+                    b-weitner@gmx.de
+                  </a>
+                </div>
+              </div>
+
+              <p className="mt-16 font-body text-[15px] leading-relaxed text-muted-foreground/50">
+                Ich bemühe mich, zeitnah zu antworten. Vielen Dank für Ihr Interesse.
+              </p>
+            </div>
+            {/* Empty secondary column for layout consistency */}
+            <div className="hidden md:block" />
+          </div>
         </motion.div>
       </div>
     </MusealLayout>
