@@ -40,7 +40,8 @@ const PaintingDetail = ({ painting, onClose }: PaintingDetailProps) => {
             <img
               src={painting.src}
               alt={`${painting.title}, ${painting.year}`}
-              className="max-h-[70vh] max-w-full object-contain"
+              decoding="async"
+              className="max-h-[70vh] max-w-full object-contain bg-muted"
             />
 
             {/* Caption */}
@@ -49,7 +50,9 @@ const PaintingDetail = ({ painting, onClose }: PaintingDetailProps) => {
                 {painting.title}
               </h2>
               <p className="font-body mt-2 text-xs tracking-[0.15em] text-muted-foreground">
-                {painting.year} · {painting.medium} · {painting.dimensions}
+                {painting.year}
+                {painting.medium && ` · ${painting.medium}`}
+                {painting.dimensions && ` · ${painting.dimensions}`}
               </p>
             </div>
           </motion.div>

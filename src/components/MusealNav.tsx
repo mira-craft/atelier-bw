@@ -1,22 +1,44 @@
 import { NavLink } from "react-router-dom";
 
 const navItems = [
-  { label: "Paintings", path: "/paintings" },
-  { label: "About", path: "/about" },
-  { label: "Contact", path: "/contact" },
+  { label: "Werke", path: "/werke" },
+  { label: "Bio", path: "/bio" },
+  { label: "Kontakt", path: "/kontakt" },
 ];
 
 const MusealNav = () => {
   return (
-    <nav className="fixed left-0 top-0 z-50 flex h-full w-nav flex-col justify-between px-8 py-10">
+    <nav
+      className="
+        fixed left-0 top-0 z-50
+        h-full w-nav
+        flex flex-col justify-between
+        px-8 py-10
+      "
+    >
       {/* Artist name */}
       <NavLink
         to="/"
-        className="font-serif text-sm tracking-widest uppercase text-black opacity-90 hover:opacity-100 transition-opacity duration-500 text-halo-light"
+        className="
+          inline-block
+          font-serif text-sm tracking-widest uppercase
+          text-black
+          transition-opacity duration-500
+          opacity-90 hover:opacity-100
+        "
       >
-        Birgit
-        <br />
-        Weitner
+        <span
+          className="
+            inline-block
+            px-2 py-1
+            bg-white/50
+            backdrop-blur-[2px]
+          "
+        >
+          Birgit
+          <br />
+          Weitner
+        </span>
       </NavLink>
 
       {/* Navigation links */}
@@ -26,19 +48,43 @@ const MusealNav = () => {
             <NavLink
               to={item.path}
               className={({ isActive }) =>
-                `font-body text-xs tracking-[0.2em] uppercase transition-all duration-500 relative group text-halo-light ${
-                  isActive
-                    ? "text-black"
-                    : "text-black/60 hover:text-black"
-                }`
+                `
+                group inline-block
+                font-body text-xs uppercase tracking-[0.2em]
+                transition-all duration-300
+                text-black
+              `
               }
             >
               {({ isActive }) => (
-                <span className="flex items-center gap-3">
+                <span
+                  className={`
+                    inline-flex items-center gap-3
+                    px-2 py-1
+
+                    bg-white/45
+                    backdrop-blur-[2px]
+
+                    transition-all duration-300
+
+                    ${
+                      isActive
+                        ? "bg-white/65"
+                        : "hover:bg-white/65"
+                    }
+                  `}
+                >
+                  {/* Indicator line */}
                   <span
-                    className={`inline-block h-[3px] rounded-full bg-current transition-all duration-500 ${
-                      isActive ? "w-4" : "w-0 group-hover:w-2"
-                    }`}
+                    className={`
+                      inline-block h-[3px] rounded-full bg-black
+                      transition-all duration-300
+                      ${
+                        isActive
+                          ? "w-4"
+                          : "w-0 group-hover:w-2"
+                      }
+                    `}
                   />
                   {item.label}
                 </span>
@@ -49,8 +95,22 @@ const MusealNav = () => {
       </ul>
 
       {/* Bottom — Studio label */}
-      <span className="font-body text-[10px] tracking-[0.3em] uppercase text-black/60 text-halo-light">
-        Studio
+      <span
+        className="
+          inline-block
+          font-body text-[10px] uppercase tracking-[0.3em]
+          text-black
+        "
+      >
+        <span
+          className="
+            inline-block
+            px-2 py-1
+            backdrop-blur-sm
+          "
+        >
+          Atelier
+        </span>
       </span>
     </nav>
   );
