@@ -8,6 +8,7 @@ import Werke from "./pages/Werke";
 import Bio from "./pages/Bio";
 import Kontakt from "./pages/Kontakt";
 import NotFound from "./pages/NotFound";
+import Atelier from "./pages/Atelier";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/bio" element={<Bio />} />
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/atelier" element={<Atelier />} /> 
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

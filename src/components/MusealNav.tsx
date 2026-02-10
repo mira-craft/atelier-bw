@@ -94,12 +94,15 @@ const MusealNav = () => {
         ))}
       </ul>
 
-      {/* Bottom — Studio label */}
-      <span
+      {/* Bottom — Studio label (link to Atelier page) */}
+      <NavLink
+        to="/atelier"
         className="
           inline-block
           font-body text-[10px] uppercase tracking-[0.3em]
           text-black
+          transition-opacity duration-200
+          hover:opacity-80
         "
       >
         <span
@@ -111,7 +114,7 @@ const MusealNav = () => {
         >
           Atelier
         </span>
-      </span>
+      </NavLink>
     </nav>
   );
 };
