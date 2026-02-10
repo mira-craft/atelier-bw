@@ -24,7 +24,7 @@ const PaintingDetail = ({ painting, onClose }: PaintingDetailProps) => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.98 }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
-            className="relative flex max-h-[90vh] max-w-[90vw] flex-col items-center gap-8 p-8"
+            className="relative flex max-h-[90vh] max-w-[95vw] flex-col items-center gap-4 p-4 sm:max-w-[90vw] sm:gap-6 sm:p-6 md:gap-8 md:p-8"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}
@@ -41,15 +41,15 @@ const PaintingDetail = ({ painting, onClose }: PaintingDetailProps) => {
               src={painting.src}
               alt={`${painting.title}, ${painting.year}`}
               decoding="async"
-              className="max-h-[70vh] max-w-full object-contain bg-muted"
+              className="max-h-[60vh] max-w-full object-contain bg-muted sm:max-h-[65vh] md:max-h-[70vh]"
             />
 
             {/* Caption */}
             <div className="text-center">
-              <h2 className="font-serif text-2xl italic text-foreground">
+              <h2 className="font-serif text-xl italic text-foreground sm:text-2xl">
                 {painting.title}
               </h2>
-              <p className="font-body mt-2 text-xs tracking-[0.15em] text-muted-foreground">
+              <p className="font-body mt-1 text-[10px] tracking-[0.15em] text-muted-foreground sm:mt-2 sm:text-xs">
                 {painting.year}
                 {painting.medium && ` · ${painting.medium}`}
                 {painting.dimensions && ` · ${painting.dimensions}`}
