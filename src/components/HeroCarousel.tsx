@@ -52,7 +52,7 @@ const HeroCarousel = () => {
       </AnimatePresence>
 
       {/* Caption — bottom right, restrained */}
-      <div className="absolute bottom-10 right-10 z-10 text-right">
+      <div className="absolute bottom-16 right-5 z-10 text-right sm:bottom-12 sm:right-8 md:bottom-10 md:right-10">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}
@@ -61,10 +61,10 @@ const HeroCarousel = () => {
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           >
-            <h2 className="font-serif text-xl font-light italic text-primary-foreground/90 text-halo">
+            <h2 className="font-serif text-base font-light italic text-primary-foreground/90 text-halo sm:text-lg md:text-xl">
               {slide.title}
             </h2>
-            <p className="font-body mt-1 text-xs tracking-[0.2em] uppercase text-primary-foreground/60 text-halo">
+            <p className="font-body mt-1 text-[10px] tracking-[0.2em] uppercase text-primary-foreground/60 text-halo sm:text-xs">
               {slide.year}
             </p>
           </motion.div>
@@ -72,7 +72,7 @@ const HeroCarousel = () => {
       </div>
 
       {/* Progress dots — bottom center */}
-      <div className="absolute bottom-10 left-1/2 z-10 flex -translate-x-1/2 gap-3">
+      <div className="absolute bottom-5 left-1/2 z-10 flex -translate-x-1/2 gap-3 sm:bottom-8 md:bottom-10">
         {slides.map((_, i) => (
           <button
             key={i}
@@ -80,8 +80,8 @@ const HeroCarousel = () => {
             aria-label={`View slide ${i + 1}`}
             className={`h-[3px] rounded-full transition-all duration-700 ${
               i === current
-                ? "w-12 bg-primary-foreground/60"
-                : "w-6 bg-primary-foreground/20 hover:bg-primary-foreground/40"
+                ? "w-8 bg-primary-foreground/60 sm:w-12"
+                : "w-4 bg-primary-foreground/20 hover:bg-primary-foreground/40 sm:w-6"
             }`}
           />
         ))}

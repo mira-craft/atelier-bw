@@ -62,19 +62,40 @@ const Werke = () => {
 
   return (
     <MusealLayout>
-      <div className="min-h-screen px-8 py-16 md:px-16 lg:px-24">
+      <div className="min-h-screen px-5 pt-20 pb-12 sm:px-8 sm:py-16 md:px-16 lg:px-24">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-8 sm:mb-12 md:mb-16"
         >
-          <h1 className="font-serif text-3xl text-foreground">Werke</h1>
+          <h1 className="font-serif text-2xl text-foreground sm:text-3xl">Werke</h1>
         </motion.div>
 
-        <div className="flex gap-16">
-          {/* Year navigation */}
+        {/* Mobile year selector — horizontal scrollable pills */}
+        {years.length > 0 && (
+          <div className="mb-8 -mx-5 px-5 overflow-x-auto scrollbar-hide md:hidden">
+            <div className="flex gap-3 pb-2">
+              {years.map((year) => (
+                <button
+                  key={year.key}
+                  onClick={() => setActiveYear(year.label)}
+                  className={`shrink-0 rounded-full px-4 py-1.5 text-[11px] tracking-[0.15em] uppercase transition-colors ${
+                    activeYear === year.label
+                      ? "bg-foreground text-background"
+                      : "bg-muted text-muted-foreground hover:bg-muted/80"
+                  }`}
+                >
+                  {year.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className="flex gap-8 md:gap-16">
+          {/* Year navigation — desktop only */}
           <aside className="sticky top-32 hidden w-32 shrink-0 md:block">
             <ul className="space-y-4">
               {years.map((year) => (
@@ -103,7 +124,7 @@ const Werke = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.4 }}
-                className="columns-1 gap-8 sm:columns-2 lg:columns-3"
+                className="columns-1 gap-4 sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8"
               >
                 {paintings.map((painting, i) => (
                   <motion.div
@@ -111,7 +132,7 @@ const Werke = () => {
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.05 }}
-                    className="mb-8 break-inside-avoid cursor-pointer group"
+                    className="mb-4 break-inside-avoid cursor-pointer group sm:mb-6 lg:mb-8"
                     onClick={() => setSelected(painting)}
                   >
                     <img

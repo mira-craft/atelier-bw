@@ -5,21 +5,21 @@ import whitecanvas from "@/assets/whitecanvas.jpg";
 const Atelier = () => {
   return (
     <MusealLayout>
-      <div className="flex min-h-screen items-start justify-center px-8 py-20 md:py-32">
+      <div className="flex min-h-screen items-start justify-center px-5 pt-20 pb-12 sm:px-8 sm:py-20 md:py-32">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="w-full max-w-5xl"
         >
-          <div className="grid gap-16 md:grid-cols-2">
+          <div className="grid gap-8 md:gap-16 md:grid-cols-2">
             {/* Text */}
             <div>
-              <h1 className="font-serif text-3xl text-foreground">
+              <h1 className="font-serif text-2xl text-foreground sm:text-3xl">
                 Atelier
               </h1>
 
-              <div className="mt-12 space-y-8 font-body text-sm leading-[1.8] text-muted-foreground">
+              <div className="mt-8 space-y-6 font-body text-sm leading-[1.8] text-muted-foreground sm:mt-12 sm:space-y-8">
                 <p>
                   Das Atelier ist ein Ort des Arbeitens, des Suchens und des
                   Weiterdenkens. Hier entstehen neue Bilder, Skizzen und Serien –
