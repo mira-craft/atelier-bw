@@ -4,7 +4,7 @@ import MusealLayout from "@/components/MusealLayout";
 const Kontakt = () => {
   return (
     <MusealLayout>
-      <div className="flex min-h-screen items-start justify-center px-5 pt-20 pb-12 sm:px-8 sm:py-20 md:py-32">
+      <div className="flex min-h-screen items-start justify-center px-5 pt-20 pb-12 sm:px-8 sm:py-20 md:py-26">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}

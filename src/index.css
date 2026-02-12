@@ -153,6 +153,15 @@
     display: none;
   }
 
+  /* Bio sections spacing */
+  section {
+    margin-bottom: 0;
+  }
+
+  .bio-sections section:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
   /* Subtle text halo for readability on variable backgrounds */
   .text-halo {
     text-shadow: 
