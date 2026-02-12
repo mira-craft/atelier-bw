@@ -62,7 +62,8 @@ const Werke = () => {
 
   return (
     <MusealLayout>
-      <div className="min-h-screen px-5 pt-20 pb-12 sm:px-8 sm:py-16 md:px-16 lg:px-24">
+      <div className="flex min-h-screen items-start justify-center px-5 pt-20 pb-12 sm:px-8 sm:py-20 md:py-26">
+        <div className="w-full max-w-5xl">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
@@ -147,6 +148,7 @@ const Werke = () => {
               </motion.div>
             </AnimatePresence>
           </main>
+        </div>
         </div>
       </div>
 
