@@ -37,9 +37,35 @@ const Werke = () => {
         return res.json();
       })
       .then((data: WorkerResponse) => {
-        setYears(data.years);
-        if (data.years.length > 0) {
-          setActiveYear(data.years[0].label);
+        // Gruppiere Jahre 2021 bis heute als "Aktuelles"
+        const recentYears = new Set(['2021', '2022', '2023', '2024', '2025', '2026']);
+        
+        let aktuellesItems: WorkerItem[] = [];
+        const otherYears: WorkerYear[] = [];
+        
+        data.years.forEach((year) => {
+          if (recentYears.has(year.label)) {
+            aktuellesItems = [...aktuellesItems, ...year.items];
+          } else {
+            otherYears.push(year);
+          }
+        });
+        
+        const transformedYears: WorkerYear[] = [];
+        
+        if (aktuellesItems.length > 0) {
+          transformedYears.push({
+            key: 'aktuelles',
+            label: 'Aktuelles',
+            items: aktuellesItems
+          });
+        }
+        
+        transformedYears.push(...otherYears);
+        
+        setYears(transformedYears);
+        if (transformedYears.length > 0) {
+          setActiveYear(transformedYears[0].label);
         }
       })
       .catch(console.error);
