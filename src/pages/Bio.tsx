@@ -25,31 +25,30 @@ const Bio = () => {
                 </p>
 
                 <p>
-                  Über viele Jahre hinweg gab ich Malkurse und setzte mich intensiv
-                  mit künstlerischen und pädagogischen Fragestellungen auseinander.
-                  2008–2009 absolvierte ich eine Weiterbildung in Pädagogischer
-                  Kunsttherapie an der KatHO NRW bei Professor Domma. Mich
-                  interessierte zunehmend, was im kreativen Prozess innerlich
-                  geschieht – wie Aktion, Intuition und Emotion ineinandergreifen
-                  und sich gegenseitig beeinflussen. Diese Auseinandersetzung hat
-                  mein Verständnis geschärft und mein Arbeiten begleitet.
+                  Vom Gegenständlichen angezogen, habe ich schnell begriffen, dass darin eine große Gefahr des "gefangen seins" verborgen ist.
+                  Es stellte sich mir die Frage: Wie bewege ich mich vom präzisen Erfassen ins Offene? Meine Arbeit soll frei,
+                  spontan und informell sein. Nur so kann ich über das Malen zu einem inneren Ausdruck gelangen. Besonders die
+                  Auseinandersetzung mit Cézanne und den Expressionisten xdes frühen 20. Jahrhunderts hat mich beeindruckt; sie
+                  waren, so gesehen, meine Wegweiser.
                 </p>
 
                 <p>
-                  Mit der Zeit wurde jedoch eine andere Frage drängender:
-                  Wie bewege ich mich vom präzisen Erfassen ins Offene?
-                </p>
-
-                <p>
-                  Die Suche nach einer Antwort führte mich an die Europäische Kunstakademie Trier.
-                  Dort stellte ich mich genau dieser Herausforderung – dem Schritt vom Gegenständlichen in die Abstraktion.
-                  Das Genaue gibt Halt. Es ordnet, strukturiert, sichert ab. Und doch suchte ich mehr Offenheit,
+                  Die Suche nach einer Antwort führte mich an die Europäische Kunstakademie Trier. Dort stellte ich mich genau 
+                  dieser Herausforderung – dem Schritt vom Gegenständlichen in die Abstraktion.
+                  Das Genaue gibt Halt. Es ordnet, strukturiert, sichert ab. Und doch suchte ich mehr Offenheit, 
                   mehr Vertrauen und auch mehr Gelassenheit in Komposition und Ausdruck. Mehr Freiheit. Und fand sie.
                 </p>
 
                 <p>
-                  Heute reizt mich weniger das präzise Abbild als der lebendige Prozess
+                  Dieser Weg war nicht gradlinig. Oft steinig und turbulent. Dann wieder luftig und leicht. 
+                  Meine Motive finde ich in Begegnungen mit Menschen, in der Natur, morgens beim Lesen der Zeitung, 
+                  wenn mich das Weltgeschehen ratlos oder verzweifelt zurücklässt. Manchmal ist es auch die Farbe selbst, 
+                  in ihrer unendlichen Kombinationsmöglichkeit, die mich einfach beginnen lässt.
+                  Es ist das Leben, wie es mich berührt, das meine Leidenschaft weckt, mich im Bild auszudrücken.               
                 </p>
+                <p>Ich möchte Sie hier nicht mit ausführlichen Erklärungen zu meiner Person aufhalten.
+                  Lieber lade ich Sie ein, beim Betrachten meiner Bilder in einen eigenen inneren Dialog zu treten und 
+                  darin Ihre ganz persönliche Resonanz zu entdecken.</p>
               </div>
             </div>
 
@@ -85,6 +84,16 @@ const Bio = () => {
                     <p>
                       Emotionen mit Bildern auszudrücken – weil Worte dafür manchmal nicht reichen.
                       Oft zeigt sich erst im Malprozess oder im fertigen Werk, was wirklich gemeint war.
+                    </p>
+                     <p>
+                      Heute reizt mich weniger das präzise Abbild als der lebendige Prozess.
+                    </p>
+                    <p>
+                      Ich arbeite in Aachen in meinem{' '}
+                      <a href="/atelier" className="link-subtle">
+                        Atelier
+                      </a>
+                      . Gerne können Sie Kontakt zu mir aufnehmen.
                     </p>
                   </div>
                 </section>
