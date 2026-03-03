@@ -46,12 +46,18 @@ const PaintingDetail = ({ painting, onClose }: PaintingDetailProps) => {
 
             {/* Caption */}
             <div className="text-center">
+              {/* Titel des Kunstwerks */}
               <h2 className="font-serif text-xl italic text-foreground sm:text-2xl">
                 {painting.title}
               </h2>
+              
+              {/* Metadaten: Zeitraum, Material, Größe - durch · getrennt */}
               <p className="font-body mt-1 text-[10px] tracking-[0.15em] text-muted-foreground sm:mt-2 sm:text-xs">
+                {/* Zeitraum / Jahr */}
                 {painting.year}
+                {/* Material (optional) - z.B. "Acryl auf Leinwand" */}
                 {painting.medium && ` · ${painting.medium}`}
+                {/* Dimensionen (optional) - z.B. "40×50 cm" */}
                 {painting.dimensions && ` · ${painting.dimensions}`}
               </p>
             </div>

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import MusealLayout from "@/components/MusealLayout";
 import PaintingDetail from "@/components/PaintingDetail";
 import { Painting, filenameToTitle } from "@/data/paintings";
+import { getMetadataForPainting } from "@/data/painting-metadata";
 
 const API_BASE = import.meta.env.VITE_WORKER_URL;
 
@@ -77,12 +78,20 @@ const Werke = () => {
     if (!year) return;
 
     setPaintings(
-      year.items.map((item) => ({
-        id: item.id,
-        title: filenameToTitle(item.filename),
-        year: year.label,
-        src: item.url,
-      }))
+      year.items.map((item) => {
+        // Hole Metadaten (Material & Größe) aus der separaten Metadaten-Datei
+        const metadata = getMetadataForPainting(item.id);
+        
+        return {
+          id: item.id,
+          title: filenameToTitle(item.filename),
+          year: year.label,
+          src: item.url,
+          // Metadaten werden aus painting-metadata.ts geladen (falls vorhanden)
+          medium: metadata?.medium,
+          dimensions: metadata?.dimensions,
+        };
+      })
     );
   }, [years, activeYear]);
 
