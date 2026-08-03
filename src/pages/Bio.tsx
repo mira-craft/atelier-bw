@@ -17,38 +17,34 @@ const Bio = () => {
             <div>
               <div className="space-y-5 font-body text-sm leading-[1.8] text-muted-foreground sm:space-y-6">
                 <p>
-                  Ich arbeite überwiegend mit Acryl auf Leinwand. Meine
-                  künstlerische Praxis hat sich aus einem weitgehend
-                  autodidaktischen Studium der Malerei entwickelt. In früheren
-                  Jahren entstanden Aquarelle und Zeichnungen, die meinen Blick
-                  für Linie, Fläche und Farbwirkung bis heute prägen.
+                  Große Meister wie Cézanne und die Expressionisten zu Anfang der Zwanziger haben in mir die Lust an der
+                  Malerei geweckt. Es stellte sich mir die Frage: Wie bewege ich mich vom präzisen Erfassen ins Offene? Meine
+                  Arbeit soll frei, spontan und informell sein. Nur so kann ich über das Malen zu einem inneren Ausdruck
+                  gelangen.
                 </p>
 
                 <p>
-                  Vom Gegenständlichen angezogen, habe ich schnell begriffen, dass darin eine große Gefahr des "gefangen seins" verborgen ist.
-                  Es stellte sich mir die Frage: Wie bewege ich mich vom präzisen Erfassen ins Offene? Meine Arbeit soll frei,
-                  spontan und informell sein. Nur so kann ich über das Malen zu einem inneren Ausdruck gelangen. Besonders die
-                  Auseinandersetzung mit Cézanne und den Expressionisten xdes frühen 20. Jahrhunderts hat mich beeindruckt; sie
-                  waren, so gesehen, meine Wegweiser.
+                  Menschen, die Spuren hinterlassen, für etwas brennen, entschlossen, zerbrechlich und energievoll sind, lassen
+                  mich in einen Malprozess eintauchen. Es geht mir dabei nicht um ein gelungenes Bild, sondern um die visuelle
+                  Annäherung an das eigene Gefühl. Meine Arbeiten sind frei, spontan und weitestgehend informell. Dialoge
+                  über das Weltgeschehen lassen eine Flut von Motiven aufflammen, die Schicht für Schicht zu einem Ausdruck
+                  meines Empfindens gelangen.
                 </p>
 
                 <p>
-                  Die Suche nach einer Antwort führte mich an die Europäische Kunstakademie Trier. Dort stellte ich mich genau 
-                  dieser Herausforderung – dem Schritt vom Gegenständlichen in die Abstraktion.
-                  Das Genaue gibt Halt. Es ordnet, strukturiert, sichert ab. Und doch suchte ich mehr Offenheit, 
-                  mehr Vertrauen und auch mehr Gelassenheit in Komposition und Ausdruck. Mehr Freiheit. Und fand sie.
+                  In der Begegnung mit Menschen, in der Natur oder auch, wenn ich morgens die Zeitung lese und mich das
+                  momentane Weltgeschehen fassungslos macht, entzündet sich meine Fantasie. Die Malerei bietet mir ein weites
+                  Feld, auf dem ich mich mit dem, was mich umgibt, auseinandersetze.
                 </p>
 
                 <p>
-                  Dieser Weg war nicht gradlinig. Oft steinig und turbulent. Dann wieder luftig und leicht. 
-                  Meine Motive finde ich in Begegnungen mit Menschen, in der Natur, morgens beim Lesen der Zeitung, 
-                  wenn mich das Weltgeschehen ratlos oder verzweifelt zurücklässt. Manchmal ist es auch die Farbe selbst, 
-                  in ihrer unendlichen Kombinationsmöglichkeit, die mich einfach beginnen lässt.
-                  Es ist das Leben, wie es mich berührt, das meine Leidenschaft weckt, mich im Bild auszudrücken.               
+                  Ich freue mich, wenn Sie beim Betrachten meiner Bilder in einen eigenen inneren Dialog treten können und diese
+                  im besten Fall eine Resonanz in Ihrem eigenen Innersten finden.
                 </p>
-                <p>Ich möchte Sie hier nicht mit ausführlichen Erklärungen zu meiner Person aufhalten.
-                  Lieber lade ich Sie ein, beim Betrachten meiner Bilder in einen eigenen inneren Dialog zu treten und 
-                  darin Ihre ganz persönliche Resonanz zu entdecken.</p>
+
+                <p>
+                  Ich arbeite in Aachen in meinem Atelier. Gerne können Sie Kontakt zu mir aufnehmen.
+                </p>
               </div>
             </div>
 
